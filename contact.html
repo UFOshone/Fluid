@@ -2,39 +2,35 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact - Fluid</title>
+  <title>Contact - Alien Nation</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="registration.html">Register</a></li>
+    </ul>
+  </nav>
 
-  <!-- Header -->
-  <header>
-    <h1>Contact Fluid</h1>
-   <nav>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="services.html">Services</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="registration.html">Register</a></li>
-  </ul>
-</nav>
+  <section>
+    <h1>Contact Us</h1>
+    <form>
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
 
-  </header>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
 
-  <!-- Main Content -->
-  <main>
-    <section>
-      <h2>Get in Touch</h2>
-      <p>If you’d like to connect, collaborate, or ask a question, drop me a message below.</p>
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="4" required></textarea><br><br>
 
-      <form action="https://formspree.io/f/mnqekdld" method="POST">
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" required><br><br>
-
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
-
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" rows="5" re
+      <button type="submit">Send Message</button>
+      <button type="reset">Reset</button>
+    </form>
+  </section>
+</body>
+</html>
