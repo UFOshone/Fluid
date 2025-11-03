@@ -1,134 +1,9 @@
-/* ===== General Layout ===== */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-  background-color: #f0f0f0;
-  color: #333;
-}
-
-header {
-  background-color: #222;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
-}
-
-nav {
-  background-color: #444;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-}
-
-nav ul li {
-  margin: 0 15px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 0;
-}
-
-nav ul li a.active,
-nav ul li a:hover {
-  text-decoration: underline;
-}
-
-footer {
-  background-color: #222;
-  color: #fff;
-  text-align: center;
-  padding: 15px 0;
-  margin-top: 20px;
-}
-
-/* ===== Gallery ===== */
-.gallery {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin: 20px 0;
-}
-
-.gallery img {
-  border: 2px solid #ccc;
-  border-radius: 8px;
-}
-
-/* ===== Accordion ===== */
-.accordion {
-  max-width: 800px;
-  margin: 20px auto;
-}
-
-.accordion-item {
-  border: 1px solid #aaa;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  background-color: #fff;
-}
-
-.accordion-item h3 {
-  margin: 0;
-  padding: 10px;
-  background-color: #eee;
-  cursor: pointer;
-}
-
-.accordion-body {
-  display: none;
-  padding: 10px;
-  background-color: #f9f9f9;
-}
-
-.accordion-item.active .accordion-body {
-  display: block;
-}
-
-/* ===== Card Group ===== */
-.card-group {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin: 20px 0;
-}
-
-.card {
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  width: 200px;
-  text-align: center;
-  overflow: hidden;
-}
-
-.card img {
-  width: 100%;
-  display: block;
-}
-
-.card-body {
-  padding: 10px;
-}
-
-/* ===== Registration Form ===== */
 form {
   max-width: 600px;
-  margin: 20px auto;
+  margin: 0 auto;
   padding: 20px;
   border: 1px solid #ccc;
   background-color: #f4f4f4;
-  border-radius: 8px;
 }
 
 form label {
@@ -137,9 +12,7 @@ form label {
   font-weight: bold;
 }
 
-form input,
-form select,
-form textarea {
+form input, form select, form textarea {
   width: 100%;
   padding: 8px;
   margin-bottom: 15px;
@@ -147,19 +20,9 @@ form textarea {
   border-radius: 4px;
 }
 
-form input[type="submit"],
-form input[type="reset"] {
+form input[type="submit"], form input[type="reset"] {
   width: auto;
   padding: 10px 20px;
   margin-right: 10px;
   cursor: pointer;
-  background-color: #444;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-}
-
-form input[type="submit"]:hover,
-form input[type="reset"]:hover {
-  background-color: #222;
 }
