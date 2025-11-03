@@ -1,7 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Alien Nation - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Alien Nation</h1>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="registration.html">Register</a></li>
+  </ul>
+</nav>
+
 <main>
-  <!-- Hero / Welcome -->
+  <!-- Welcome Section -->
   <section>
-    <h1>Welcome to Alien Nation</h1>
+    <h2>Welcome to Alien Nation</h2>
     <p>Exploring cosmic life, mysteries, and the truth beyond the stars.</p>
   </section>
 
@@ -41,3 +64,20 @@
     </div>
   </section>
 </main>
+
+<footer>
+  <p>&copy; 2025 Alien Nation. All rights reserved.</p>
+</footer>
+
+<script>
+  // Simple Accordion Script
+  const items = document.querySelectorAll('.accordion-item h3');
+  items.forEach(item => {
+    item.addEventListener('click', () => {
+      item.parentElement.classList.toggle('active');
+    });
+  });
+</script>
+
+</body>
+</html>
