@@ -1,47 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Alien Nation Registration</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="registration.html">Register</a></li>
-    </ul>
-  </nav>
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f4f4f4;
+}
 
-  <section>
-    <h1>Register for the Alien Nation Conference</h1>
-    <form>
-      <label for="fullname">Full Name:</label><br>
-      <input type="text" id="fullname" name="fullname" required><br><br>
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
 
-      <label for="email">Email Address:</label><br>
-      <input type="email" id="email" name="email" required><br><br>
+form input, form select, form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
 
-      <label for="planet">Home Planet:</label><br>
-      <input type="text" id="planet" name="planet" placeholder="e.g., Earth, Mars, Sirius B"><br><br>
-
-      <label for="species">Species Type:</label><br>
-      <select id="species" name="species">
-        <option value="human">Human</option>
-        <option value="gray">Gray Alien</option>
-        <option value="reptilian">Reptilian</option>
-        <option value="pleiadian">Pleiadian</option>
-      </select><br><br>
-
-      <label for="bio">Short Bio:</label><br>
-      <textarea id="bio" name="bio" rows="3" placeholder="Tell us about your cosmic background"></textarea><br><br>
-
-      <button type="submit">Submit</button>
-      <button type="reset">Reset</button>
-    </form>
-  </section>
-</body>
-</html>
+form input[type="submit"], form input[type="reset"] {
+  width: auto;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
