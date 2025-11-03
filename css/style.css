@@ -1,70 +1,29 @@
-/* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f4f4f4;
 }
 
-/* Fluid Layout */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: AliceBlue; /* example color scheme */
-    color: #333;
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 
-/* Header */
-header {
-    background-color: SteelBlue;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
+form input, form select, form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
 }
 
-header h1 {
-    font-size: 2.5rem;
-    /* Optional: add a custom font or flamingtext image */
-}
-
-/* Navigation */
-nav {
-    background-color: LightSteelBlue;
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 10px 0;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    color: Yellow;
-}
-
-/* Main content */
-main {
-    padding: 20px;
-}
-
-/* Footer */
-footer {
-    background-color: SteelBlue;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
+form input[type="submit"],
+form input[type="reset"] {
+  width: auto;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
 }
